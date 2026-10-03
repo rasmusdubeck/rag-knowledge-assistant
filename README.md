@@ -22,7 +22,7 @@ Set the Gemini key and, optionally, a different model:
 
 ```bash
 export GEMINI_API_KEY="your-key"
-export GEMINI_MODEL="gemini-2.5-flash-lite"
+export GEMINI_MODEL="gemini-3.1-flash-lite"
 ```
 
 ## Use
@@ -42,6 +42,16 @@ export GEMINI_MODEL="gemini-2.5-flash-lite"
 
 Type a question, or `quit` to exit. The generated FAISS files are kept in
 `data/index/` and are ignored by git.
+
+## Cleanup
+
+To remove the generated index and Python cache files without deleting the
+source PDFs:
+
+```bash
+rm -rf data/index .pytest_cache
+find . -type d -name __pycache__ -prune -exec rm -rf {} +
+```
 
 ## Technologies
 
