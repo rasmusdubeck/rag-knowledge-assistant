@@ -5,7 +5,7 @@ import os
 from google import genai
 
 
-DEFAULT_GEMINI_MODEL = "gemini-2.5-flash-lite"
+DEFAULT_GEMINI_MODEL = "gemini-3.1-flash-lite"
 
 
 def generate_answer(question: str, retrieved_chunks: list[dict]) -> str:
