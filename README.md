@@ -1,7 +1,9 @@
 # RAG Knowledge Assistant
 
 A small learning project that answers questions about local PDF documents with a
-minimal Retrieval-Augmented Generation (RAG) pipeline.
+minimal Retrieval-Augmented Generation (RAG) pipeline. As an example, the GDPR
+regulation PDF has been added to `data/documents/` (source:
+https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng), but any PDF can be added.
 
 ## Pipeline
 
